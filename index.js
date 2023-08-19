@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const axios = require("axios");
-const port = 3000;
+const port = process.env.PORT || 3000;
 const bodyParser = require('body-parser');
 const { error } = require("console");
 app.use(bodyParser.urlencoded({ extended: true }));
