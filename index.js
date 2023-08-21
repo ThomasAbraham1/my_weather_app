@@ -12,7 +12,7 @@ var city;
 var weather;
 
 app.get('/', (req, res) => {
-    res.render('index', { hello: 'Hello niggaer' });
+    res.render('index', { hello: 'Hello There! Enter the city name.' });
 });
 
 app.post("/", (req, res) => {
